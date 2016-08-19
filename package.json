@@ -12,6 +12,10 @@
     ]
   },
   "author": "Anjana Ganesh <anjana.ganesh@priceline.com> (https://github.com/aganesh9)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pricelinelabs/api-sheriff"
+  },
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.4.0",
