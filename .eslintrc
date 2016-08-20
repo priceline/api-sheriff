@@ -1,4 +1,4 @@
-module.exports = {
+{
   "parser": "babel-eslint",
   "env": {
     "es6": true,
@@ -33,8 +33,6 @@ module.exports = {
     "jsx": true
   },
   "rules": {
-    //require spacing after and before it for keywords like if, else, while, etc
-    "keyword-spacing": [2, { "before": true, "after": true}],
     // require parens in arrow function arguments
     "arrow-parens": 2,
     // require space before/after arrow function's arrow
@@ -131,7 +129,7 @@ module.exports = {
     // var foo = "Copyright \251";
     "no-octal-escape": 2,
     // disallow reassignment of function parameters
-    "no-param-reassign": 2,
+    "no-param-reassign": 1,
     // disallow use of process.env
     "no-process-env": 0,
     // disallow usage of __proto__ property
@@ -259,4 +257,4 @@ module.exports = {
     "no-console": 2,
     "no-undef": 1
   }
-};
+}
