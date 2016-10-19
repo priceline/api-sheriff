@@ -35,13 +35,13 @@ describe("Compare 2 custom api endpoints", function() {
 	this.timeout(80000);
 
 	it("Submit request to first endpoint", function(done) {
-		apisheriff.submitSearchRequest("http://imaginaryhost1:8080/getProperties/nyc", { "Content-Type: application/json"}, { "json": true }, done, "Endpoint down").then(function(resp) {
+		apisheriff.submitGetRequest("http://imaginaryhost1:8080/getProperties/nyc", { "Content-Type": "application/json"}, { "json": true }, done, "Endpoint down").then(function(resp) {
 			first_resp = resp;
 		});
 	}, 30000);
 	
 	it("Test Status Code", function(done) {
-		apisheriff.checkJsonPresent(".", { "statusCode": 200}, first_resp, 'strict', done);
+		apisheriff.checkJsonPresent(".", { "statusCode": 200}, first_resp, 'strict_notnull', done);
 	});
 
 });
