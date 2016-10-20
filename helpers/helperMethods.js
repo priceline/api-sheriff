@@ -362,8 +362,9 @@ var findJsonValues = function findJsonValues(path, jsonToCheck, inputJson, mode,
   }
 };
 
-function find(json, key, value, mode) {
+function find(jsonObj, key, value, mode) {
   var result = [];
+  var json = JSON.parse(JSON.stringify(jsonObj));
   var found = false;
   for (var property in json) {
     if (json.hasOwnProperty(property)) {
