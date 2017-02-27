@@ -12,6 +12,7 @@ var submitPostRequest = function submitPostRequest(url, body, headers, options, 
     url: url,
     method: 'POST',
     headers: reqHeader,
+    gzip: true,
     body: body,
     proxy: ''
   };
